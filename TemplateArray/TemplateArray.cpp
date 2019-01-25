@@ -11,7 +11,9 @@ public:
 	explicit CMyArray(int nSize) : m_nSize(nSize) {
 		m_pData = new T[nSize];
 	}
-	~CMyArray() { delete[] m_pData; }
+	~CMyArray() { 
+		cout << "家戈磊" << endl;
+		delete[] m_pData; }
 
 	//汗荤积己磊->表
 	CMyArray(const CMyArray &rhs) {
@@ -23,7 +25,7 @@ public:
 	CMyArray& operator=(const CMyArray& rhs) {
 		if (this == &rhs)
 			return *this;
-		delete[] m_pData;//
+		delete m_pData;//
 		m_pData = new T[rhs.m_nSize];
 		memcpy(m_pData, rhs.m_pData, sizeof(T)*rhs.m_nSize);
 		this->m_nSize = rhs.m_nSize;
