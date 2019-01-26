@@ -6,8 +6,8 @@ CMyList::CMyList(){
 	//LoadList()
 	FILE *fp = NULL;
 	CUserData user;
-	fopen_s(&fp, DATA_FILE_NAME, "rb");
 	ReleaseList();
+	fopen_s(&fp, DATA_FILE_NAME, "rb");
 	while (fread(&user, sizeof(CUserData), 1, fp))
 		AddNewNode(user.GetName(), user.GetPhone());
 	fclose(fp);
@@ -16,12 +16,12 @@ CMyList::CMyList(){
 CMyList::~CMyList(){
 	//SaveList()
 	FILE *fp = NULL;
-	CUserData *pTmp = m_Head.GetNext();
+	CUserData *pTmp = m_Head.pNext;
 	fopen_s(&fp, DATA_FILE_NAME, "wb");
 	while (pTmp != NULL) {
 		if (fwrite(pTmp, sizeof(CUserData), 1, fp) != 1)
 			printf("ERROR: %s에 대한 정보를 저장하는데 실패했습니다.\n", pTmp->GetName());
-		pTmp = pTmp->GetNext();
+		pTmp = pTmp->pNext;
 	}
 	fclose(fp);
 	//end
@@ -29,19 +29,18 @@ CMyList::~CMyList(){
 
 int CMyList::AddNewNode(const char* pszName, const char* pszPhone) {
 	CUserData* pNewData;
-	if(FindNode(pszName)!=NULL)
-		return 0;
 	pNewData = new CUserData;
 	strcpy(pNewData->szName, pszName);
 	strcpy(pNewData->szPhone, pszPhone);
 	pNewData->pNext = m_Head.pNext;
 	m_Head.pNext = pNewData;
+	return 1;
 }//임시
 
 void CMyList::PrintAll(){
 	CUserData* pTmp = m_Head.pNext;
 	while (pTmp != NULL) {
-		printf("[%p] %s\t%s [%p]\n", pTmp, pTmp->szName, pTmp->szPhone, pTmp->pNext);
+		printf("\n[%p] %s\t%s [%p]\n", pTmp, pTmp->szName, pTmp->szPhone, pTmp->pNext);
 		pTmp = pTmp->pNext;
 	}
 	printf("CUserData Counter : %d\n", CUserData::GetUserDataCounter());
@@ -53,6 +52,7 @@ CUserData* CMyList::FindNode(const char* pszName) {
 	while (pTmp != NULL) {
 		if (strcmp(pszName, pTmp->szName) == 0)
 			return pTmp;
+		pTmp = pTmp->pNext;
 	}
 	return NULL;
 }//임시
@@ -78,6 +78,7 @@ int CMyList::RemoveNode(const char* pszName) {
 			delete pDelete;
 			return 1;
 		}
+		pTmp = pTmp->pNext;
 	}
 	return 0;
 } //임시

@@ -2,7 +2,9 @@
 #include "UserData.h"
 #include <string.h>
 int CUserData::nUserDataCounter = 0;
-CUserData::CUserData(){
+CUserData::CUserData()
+	:pNext(NULL)
+{
 	memset(szName, 0, sizeof(szName));
 	memset(szPhone, 0, sizeof(szPhone));
 	nUserDataCounter++;

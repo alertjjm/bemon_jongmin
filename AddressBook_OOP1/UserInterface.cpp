@@ -26,7 +26,7 @@ void CUserInterface::Search(){
 	if (puser == NULL)
 		printf("찾는 데이터가 없습니다.");
 	else
-		printf("[%p] %s\t%s [%p]\n", puser, puser->GetName(), puser->GetPhone(), puser->GetNext());
+		printf("\n[%p] %s\t%s [%p]\n", puser, puser->GetName(), puser->GetPhone(), puser->GetNext());
 }
 void CUserInterface::Remove(){
 	char name[32];

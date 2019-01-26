@@ -1,13 +1,7 @@
-﻿  UserInterface.cpp
-c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\userinterface.cpp(12): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
-c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\userinterface.cpp(15): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
-c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\userinterface.cpp(24): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
-c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\userinterface.cpp(34): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
-c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\userinterface.cpp(41): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
+﻿  MyList.cpp
+c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\mylist.cpp(33): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 'strcpy' 선언을 참조하십시오.
+c:\users\windows10\documents\visual studio 2017\projects\github\addressbook_oop1\mylist.cpp(34): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 'strcpy' 선언을 참조하십시오.
   AddressBook_OOP1.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\AddressBook_OOP1\Debug\AddressBook_OOP1.exe
   AddressBook_OOP1.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\AddressBook_OOP1\Debug\AddressBook_OOP1.pdb (Partial PDB)
