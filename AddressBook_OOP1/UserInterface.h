@@ -12,6 +12,6 @@ protected:
 public:
 	void Search();
 	void Remove();
-	void PrintUI();
+	int PrintUI();
 	int Run();
 };
