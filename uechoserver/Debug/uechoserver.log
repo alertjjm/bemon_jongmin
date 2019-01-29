@@ -1,0 +1,5 @@
+﻿  uechoserver.c
+c:\users\windows10\documents\visual studio 2017\projects\github\uechoserver\uechoserver.c(31): warning C4133: '함수': 'SOCKADDR_IN *'과(와) 'sockaddr *' 사이의 형식이 호환되지 않습니다.
+c:\users\windows10\documents\visual studio 2017\projects\github\uechoserver\uechoserver.c(9): warning C4101: 'servsock' :참조되지 않은 지역 변수입니다.
+  uechoserver.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\uechoserver\Debug\uechoserver.exe
+  uechoserver.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\uechoserver\Debug\uechoserver.pdb (Partial PDB)
