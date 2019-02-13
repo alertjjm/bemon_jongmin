@@ -1,0 +1,4 @@
+﻿  15.cpp
+c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\15\15.cpp(23): warning C4101: 'ran' :참조되지 않은 지역 변수입니다.
+  15.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\15\Debug\15.exe
+  15.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\15\Debug\15.pdb (Partial PDB)
