@@ -45,7 +45,7 @@ int main(int argc, char* argv[]){
 			if(FD_ISSET(i,&cpy_reads)){
 				if(i==serv_sock){
 					adr_sz=sizeof(clnt_adr);
-					clnt_sock=accept(serv_sock, (struct sockaddr*)&clnt_adr, &adrsz);
+					clnt_sock=accept(serv_sock, (struct sockaddr*)&clnt_adr, &adr_sz);
 					FD_SET(clnt_sock, &reads);
 					if(fd_max<clnt_sock)
 						fd_max=clnt_sock;
@@ -70,4 +70,11 @@ int main(int argc, char* argv[]){
 	
 	}
 	return 0;
+
+}
+void error_handling(char* buf){
+	fputs(buf,stderr);
+	fputc('\n', stderr);
+	exit(1);
+
 }
