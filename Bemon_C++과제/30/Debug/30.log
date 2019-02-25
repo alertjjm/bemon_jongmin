@@ -1,0 +1,4 @@
+﻿  30.cpp
+c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\30\30.cpp(40): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  30.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\30\Debug\30.exe
+  30.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\30\Debug\30.pdb (Partial PDB)
