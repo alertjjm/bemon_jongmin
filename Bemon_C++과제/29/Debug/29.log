@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  29.cpp
+c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\29\29.cpp(12): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+  c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\29\29.cpp(36): note: 컴파일 중인 함수 템플릿 인스턴스화 'T *remove<int>(T [],int,T [],int,int &)'에 대한 참조를 확인하십시오.
+          with
+          [
+              T=int
+          ]
+c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\29\29.cpp(12): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  29.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\29\Debug\29.exe
+  29.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\29\Debug\29.pdb (Partial PDB)
