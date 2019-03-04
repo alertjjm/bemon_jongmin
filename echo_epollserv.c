@@ -35,6 +35,20 @@ int main(int argc, char* argvp[]){
 	epfd=epoll_create(EPOLL_SIZE);
 	ep_events=malloc(sizeof(struct epoll_event)*EPOLL_SIZE);
 	event.events=EPOLLIN;
+	event.data.fd=serv_sock;
+	epoll_ctl(epfd,EPOLL_CTL_ADD,serv_sock, &event);
 	
+	while(1){
+		event_cnt=epoll_wait(epfd,ep_events,EPOLL_SIZE,-1);
+		if(event_cnt==-1){
+			puts("epoll_wait");
+			break;
+		
+		}
+		
+	
+	}	
+
+
 	return 0;
 }
