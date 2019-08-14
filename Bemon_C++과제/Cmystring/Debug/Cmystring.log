@@ -1,0 +1,7 @@
+﻿  Mystring.cpp
+c:\users\windows10\documents\visual studio 2017\projects\github\bemon_c++과제\cmystring\mystring.cpp(22): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 'strcpy' 선언을 참조하십시오.
+  Cmystring.cpp
+  코드를 생성하고 있습니다...
+  Cmystring.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\Cmystring\Debug\Cmystring.exe
+  Cmystring.vcxproj -> C:\Users\windows10\Documents\Visual Studio 2017\Projects\GITHUB\Bemon_C++과제\Cmystring\Debug\Cmystring.pdb (Partial PDB)
