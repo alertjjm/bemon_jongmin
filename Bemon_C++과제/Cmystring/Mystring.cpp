@@ -11,6 +11,13 @@ CMystring::~CMystring()
 {
 	Release();
 }
+CMystring::CMystring(const CMystring& rhs):m_pszData(NULL),m_nLength(0) {
+	this->SetString(rhs.GetString());
+}
+CMystring& CMystring::operator=(const CMystring& rhs) {
+	this->SetString(rhs.GetString());
+	return *this;
+}
 int CMystring::SetString(const char* pszParam) {
 	Release();
 	if (pszParam == NULL)
@@ -22,7 +29,7 @@ int CMystring::SetString(const char* pszParam) {
 	strcpy(this->m_pszData, pszParam);
 	return this->m_nLength;
 }
-const char* CMystring::GetString() {
+const char* CMystring::GetString() const{
 	return m_pszData;
 }
 void CMystring::Release() {

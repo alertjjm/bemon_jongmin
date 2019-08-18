@@ -11,6 +11,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	a.SetString("hello");
 	cout << a.GetString()<<endl;
 	a.Release();
+	a = a;
     return 0;
 }
 
