@@ -17,7 +17,7 @@ CMystring::CMystring(const CMystring& rhs):m_pszData(NULL),m_nLength(0) {
 CMystring::CMystring(const char* pszParam):m_pszData(NULL),m_nLength(0) {
 	this->SetString(pszParam);
 }
-CMystring::operator char*(void) {
+CMystring::operator char*(void) const{
 	return m_pszData;
 }
 

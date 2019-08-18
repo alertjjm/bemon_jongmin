@@ -5,13 +5,14 @@
 #include "Mystring.h"
 #include<iostream>
 using namespace std;
+void TestFunc(const CMystring &strParam) {
+	cout << strParam << endl;
+}
 int _tmain(int argc, _TCHAR* argv[])
 {
-	CMystring a;
-	a.SetString("hello");
-	cout << a.GetString()<<endl;
-	a.Release();
-	a = a;
+	CMystring strData("hello");
+	::TestFunc(strData);
+	::TestFunc(CMystring("World"));
     return 0;
 }
 
