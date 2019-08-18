@@ -10,9 +10,12 @@ void TestFunc(const CMystring &strParam) {
 }
 int _tmain(int argc, _TCHAR* argv[])
 {
-	CMystring strData("hello");
-	::TestFunc(strData);
-	::TestFunc(CMystring("World"));
+	CMystring strLeft("hello"), strRight("world"), strResult;
+	strResult = strLeft + strRight;
+	cout << strResult<< endl;
+	cout << strLeft << endl;
+	strLeft += CMystring("World");
+	cout << strLeft << endl;
     return 0;
 }
 
