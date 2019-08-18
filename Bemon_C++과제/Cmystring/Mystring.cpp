@@ -8,12 +8,19 @@ CMystring::CMystring():m_pszData(NULL),m_nLength(0)
 
 
 CMystring::~CMystring()
-{
-	Release();
+{	
+	Release();	
 }
 CMystring::CMystring(const CMystring& rhs):m_pszData(NULL),m_nLength(0) {
 	this->SetString(rhs.GetString());
 }
+CMystring::CMystring(const char* pszParam):m_pszData(NULL),m_nLength(0) {
+	this->SetString(pszParam);
+}
+CMystring::operator char*(void) {
+	return m_pszData;
+}
+
 CMystring& CMystring::operator=(const CMystring& rhs) {
 	this->SetString(rhs.GetString());
 	return *this;
